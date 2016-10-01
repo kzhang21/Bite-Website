@@ -19,11 +19,23 @@
       <!--trying to add text input box for ingredients -->
       <form method="POST">
      <div id="dynamicInput">
-          Entry 1<br><input type="text" name="myInputs[]">
+     <label for="ingredients">
+          Enter your ingredients<br>
+          </label>
+          <input type="text" name="myInputs[]" placeholder="seperate ingredients by commas">
      </div>
      <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
-    </form>  
-
+    </form> 
+    <!-- the script code below submits your input by hiting enter rather than a button -->
+    <script type="text/javascript">
+    $(function(){
+      $("#field").keyup(function(event){
+  if(event.which == 13){
+    document.POST.submit();
+    }
+}); 
+</script>
+<!-- end javascript by kelly and sarah -->
 
     </div>
 
