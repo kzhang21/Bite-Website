@@ -14,7 +14,9 @@
       <div class="container">
         <h1>Ingredients</h1>
         <div class="box"> </div>
+
       </div>
+
 
       <!--trying to add text input box for ingredients -->
       <form method="POST">
@@ -37,6 +39,7 @@
 </script>
 <!-- end javascript by kelly and sarah -->
 
+
     </div>
 
     <div class="Recipes">
@@ -49,6 +52,11 @@
   			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Dinner')">Dinner</a></li>
   			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Dessert')">Dessert</a></li>
 		</ul>
+
+<button id="add">Add Field</button>
+<div id="items">
+ <div><input type="text" name="input[]"></div>
+</div>
 
 		<div id="Appetizer" class="tabcontent">
 		</div>
@@ -63,11 +71,6 @@
 
       </div>
     </div>
-    <script>
-    function openWindow(event, meal){
-      window.open("http://www.google.com");
-    }
-    </script>
 
    
   </body>

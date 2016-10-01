@@ -13,9 +13,9 @@ function addInput(divName){
      }
 }*/
 
-
-$(document).ready(function() {
-	    var next = 1;
+/*
+$(document).ready(function(){
+    var next = 1;
     $(".add-more").click(function(e){
         e.preventDefault();
         var addto = "#field" + next;
@@ -37,7 +37,18 @@ $(document).ready(function() {
                 $(this).remove();
                 $(fieldID).remove();
             });
-    });
-    
+    }); 
+});*/
 
-}
+
+$(document).ready(function(){
+	//when the Add Filed button is clicked
+	$("#add").click(function (e) {
+		//Append a new row of code to the "#items" div
+		$("#items").append('Delete');
+	});
+
+	$("body").on("click", ".delete", function (e) {
+		$(this).parent("div").remove();
+	});
+});
