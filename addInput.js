@@ -1,54 +1,33 @@
-/*
-var counter = 1;
-var limit = 20;
-function addInput(divName){
-     if (counter == limit)  {
-          alert("You have reached the limit of adding " + counter + " inputs");
-     }
-     else {
-          var newdiv = document.createElement('div');
-          newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' name='myInputs[]'>";
-          document.getElementById(divName).appendChild(newdiv);
-          counter++;
-     }
-}*/
-
-/*
-$(document).ready(function(){
-    var next = 1;
-    $(".add-more").click(function(e){
-        e.preventDefault();
-        var addto = "#field" + next;
-        var addRemove = "#field" + (next);
-        next = next + 1;
-        var newIn = '<input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text">';
-        var newInput = $(newIn);
-        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
-        var removeButton = $(removeBtn);
-        $(addto).after(newInput);
-        $(addRemove).after(removeButton);
-        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
-        $("#count").val(next);  
-        
-            $('.remove-me').click(function(e){
-                e.preventDefault();
-                var fieldNum = this.id.charAt(this.id.length-1);
-                var fieldID = "#field" + fieldNum;
-                $(this).remove();
-                $(fieldID).remove();
-            });
-    }); 
-});*/
-
-
+//take input from user input, save to..?
 $(document).ready(function(){
 	//when the Add Filed button is clicked
 	$("#add").click(function (e) {
-		//Append a new row of code to the "#items" div
-		$("#items").append('Delete');
 	});
 
-	$("body").on("click", ".delete", function (e) {
-		$(this).parent("div").remove();
+	$("body").on("click", ".add", function (e) 
+	{
+		//look up input value @UI
+
+		//get request 
+		$.get(
+	    "something.php",
+	    {paramOne : 1, paramX : 'abc'},
+	    function(data) {
+	       alert('page content: ' + data);
+	    }
+	);
+/*
+			   <!-- the script code below submits your input by hiting enter rather than a button -->
+	    <script type="text/javascript">
+	    $(function(){
+	      $("#field").keyup(function(event){
+	  if(event.which == 13){
+	    document.POST.submit();
+	    }
+	}); 
+	</script> */
+	
 	});
 });
+
+

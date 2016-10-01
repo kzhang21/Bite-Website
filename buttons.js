@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$.ajax({
 		url: "/abc"
 	////if successful ajax request
@@ -9,4 +9,4 @@ $(document).ready(function() {
 	}).error(function(){
 		console.log('ERROR');
 	})
-})
+})*/
