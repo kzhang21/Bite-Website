@@ -8,6 +8,7 @@
       <script src="buttons.js"></script>
       <script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
   </head>
+
   <body>
    <div class="ingredients ">
       <div class="container">
@@ -15,12 +16,15 @@
         <div class="box"> </div>
       </div>
 
+      <!--trying to add text input box for ingredients -->
       <form method="POST">
      <div id="dynamicInput">
           Entry 1<br><input type="text" name="myInputs[]">
      </div>
      <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
-</form>
+    </form>  
+
+
     </div>
 
     <div class="Recipes">
