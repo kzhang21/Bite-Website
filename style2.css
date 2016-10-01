@@ -3,7 +3,7 @@
 }
 body{margin: 0;}
 .container2{
-    width: 60%;
+    width: 55%;
     height:130px;
     margin: 0 ;
     background-image:  url("http://www.bearingsguide.com/wp-content/uploads/2014/03/kitchentools_1.jpg") ;
@@ -23,7 +23,7 @@ body{margin: 0;}
     
 }
 .container{
-    width: 40%;
+    width: 45%;
     height:600px;
     background-color: #92a787;
     float: left;
