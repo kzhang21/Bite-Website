@@ -2,7 +2,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='style.css'  type='text/css' rel='stylesheet'>
+    <link href='bites_style1.css'  type='text/css' rel='stylesheet'>
+      <script src="node_modules/jquery/dist/jquery.js"> </script>
+      <script language="javascript" type="text/javascript">
+      </script>
+      <script src="buttons.js"></script>
 
   </head>
   <body>
@@ -38,7 +42,8 @@
           <div class="fourth">
         <h2></br>What's in your fridge?</h2>
           <div class="centerize">
-          <div class="btn" href="#">GET STARTED
+          <!--<div class="btn" href="#">GET STARTED-->
+          <div class="btn" href="#" onclick="openWindow(event, 'GET STARTED')">GET STARTED
            </div></div> 
         </div>
         </br></br></br>
@@ -46,5 +51,10 @@
         <p> contact us
         </p>
         </div>
+      <script>
+    function openWindow(event, meal){
+      window.open("http://www.google.com");
+    }
+    </script>
   </body>
 </html>
