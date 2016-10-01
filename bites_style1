@@ -1,49 +1,109 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link href='style.css'  type='text/css' rel='stylesheet'>
-
-  </head>
-  <body>
-      <div class="mainpage">
-        <h1></br>Bites</h1>
-        </div>
-        
+html, body{
+	background-color: black;
+	margin: 0;
+	font-family: 'Courier New';
+}
 
 
-<div class="second">
-        <h2>What is bites?</h2>
-        <p>Don't know what to do with the stuff in your fridge? Think no more. Bites will provide you recipies using the ingredients in your fridge.</p>
-        </br>
-        </br>
-</div>
 
-<div class="third">
-        <h2></br>How it works</h2>
-        <p>
-         <div class="col">
-         <h2>Step 1</h2>
-         Input the ingredients that you have in your fridge
-         </div>
-          <div class="col">
-          <h2>Step 2</h2>
-          Choose a which type on food you want to eat on the tabs on the left and choose a recipe
-          </div>
-          <div class="col">
-          <h2>Step 3 </h2> 
-          Enjoy your meal! :)</div>
-          </p>
-          </div>
-          <div class="fourth">
-        <h2></br>What's in your fridge?</h2>
-          <div class="centerize">
-          <div class="btn" href="#">GET STARTED
-           </div></div> 
-        </div>
-        </br></br></br>
-        <div class="footer">
-        <p> contact us
-        </p>
-        </div>
-  </body>
-</html>
+h1 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 180px;
+	text-align: center;
+} 
+
+h2 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 100px;
+	text-align: center;
+}
+
+p {
+	color: white;
+	text-align: center;
+	font-size:20px;
+	padding-left: 25%;
+	width: 50%;
+}
+
+.mainpage {
+	background: url(photos_A000031.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	height: 600px;
+	bottom: 120px;
+
+}
+.second{
+	position: relative;
+	text-align: center;
+	top: 60px;
+	height: 500px;
+}
+
+.third{
+	background: url(photos_A000031.jpg) no-repeat center center;
+	background-size:cover;
+	height: 700px;
+	top: 30px;
+	position: relative;
+	text-align: center;
+
+}
+
+.col {
+	font-size: 25px;
+	float: left;
+	padding: 83px;
+	width: 20%;
+	color: white;
+	padding-top: 10px;
+}
+.col h2 {
+	color: white;
+	font-size: 40px;
+}
+
+.fourth{
+	position: relative;
+	text-align: center;
+	top: 60px;
+	height: 500px;
+}
+
+.btn:hover {
+	background: #92a787;
+	color: white;
+} 
+
+
+.centerize {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn {
+	-webkit-transition-duration: .4s; 
+    transition-duration: .4s;
+	background-color: white;
+	font-size: 30px;
+	padding: 18px 20px;
+	display: inline-block; 
+	text-decoration: none;
+	color: #92a787;
+	border-radius: 4px;
+	cursor: pointer;
+	border: #92a787;
+}
+
+.footer {
+	position:relative;
+	background-color: #c8c8c8;
+	bottom: -10px;
+	right: 0;
+	text-align: center;
+	height: 26px;
+}
