@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link href='style2.css'  type='text/css' rel='stylesheet'> <!--create new style sheet named style 2-->
+      <script src="node_modules/jquery/dist/jquery.js"> </script>
+      <script language="javascript" type="text/javascript">
+      </script>
+      <script src="buttons.js"></script>
+      <script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
+  </head>
+
+  <body>
+   <div class="ingredients ">
+      <div class="container">
+        <h1>Ingredients</h1>
+        <div class="box"> </div>
+
+      </div>
+
+
+      <!--trying to add text input box for ingredients -->
+      <form method="POST">
+     <div id="dynamicInput">
+     <label for="ingredients">
+          Enter your ingredients<br>
+          </label>
+          <input type="text" name="myInputs[]" placeholder="seperate ingredients by commas">
+     </div>
+     <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+    </form> 
+    <!-- the script code below submits your input by hiting enter rather than a button -->
+    <script type="text/javascript">
+    $(function(){
+      $("#field").keyup(function(event){
+  if(event.which == 13){
+    document.POST.submit();
+    }
+}); 
+</script>
+<!-- end javascript by kelly and sarah -->
+
+
+    </div>
+
+    <div class="Recipes">
+      <div class="container2">
+        <h1>Recipes</h1>
+        <ul class="tab">
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Appetizer')">Appetizer</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Breakfast')">Breakfast</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Lunch')">Lunch</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Dinner')">Dinner</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Dessert')">Dessert</a></li>
+		</ul>
+
+<button id="add">Add Field</button>
+<div id="items">
+ <div><input type="text" name="input[]"></div>
+</div>
+
+		<div id="Appetizer" class="tabcontent">
+		</div>
+		<div id="Breakfast" class="tabcontent">
+		</div>
+		<div id="Lunch" class="tabcontent">
+		</div>
+		<div id="Dinner" class="tabcontent">
+		</div>
+		<div id="Dessert" class="tabcontent">
+		</div>
+
+      </div>
+    </div>
+
+   
+  </body>
+ </html>
