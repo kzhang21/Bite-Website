@@ -6,6 +6,7 @@
       <script language="javascript" type="text/javascript">
       </script>
       <script src="buttons.js"></script>
+      <script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
   </head>
   <body>
    <div class="ingredients ">
@@ -13,6 +14,13 @@
         <h1>Ingredients</h1>
         <div class="box"> </div>
       </div>
+
+      <form method="POST">
+     <div id="dynamicInput">
+          Entry 1<br><input type="text" name="myInputs[]">
+     </div>
+     <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+</form>
     </div>
 
     <div class="Recipes">
@@ -44,5 +52,7 @@
       window.open("http://www.google.com");
     }
     </script>
+
+   
   </body>
  </html>
