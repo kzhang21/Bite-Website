@@ -17,7 +17,12 @@ $(document).ready(function(){
 		//store in array
 		var array = [ingredients];
 
+		//convert ingredients (array) back to html 
+		var template = Handlebars.complile<$("#ingred-temp")
+
 		//parce html template 
+		jQuery.parseHTML( ingredients [, context ] [, keepScripts ])
+		
 		//put on page 
 		console.log('ingredients');
 
