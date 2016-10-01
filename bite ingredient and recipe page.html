@@ -3,7 +3,8 @@
   <head>
       <link href='style2.css'  type='text/css' rel='stylesheet'> <!--create new style sheet named style 2-->
       <script src="node_modules/jquery/dist/jquery.js"> </script>
-      <script language="javascript" type="text/javascript"></script>
+      <script language="javascript" type="text/javascript">
+      </script>
   </head>
   <body>
    <div class="ingredients ">
@@ -17,7 +18,13 @@
         <h1>Recipes</h1>
 
         <ul class="tab">
-  			<li><a href="#" class="tablinks" onclick="openCity(event, 'Appetizer')">Appetizer</a></li>
+  			<li><a href="#" class="tablinks" onclick="openCity(event, 'Appetizer')">Appetizer</a>
+        </li>
+        <script type="text/javascript">
+          function openWindow() {
+          window.open('URL', 'Appetizer'); 
+          }
+        </script>
   			<li><a href="#" class="tablinks" onclick="openCity(event, 'Breakfast')">Breakfast</a></li>
   			<li><a href="#" class="tablinks" onclick="openCity(event, 'Lunch')">Lunch</a></li>
   			<li><a href="#" class="tablinks" onclick="openCity(event, 'Dinner')">Dinner</a></li>
@@ -37,5 +44,21 @@
 
       </div>
     </div>
+
+    <script>
+    function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
   </body>
  </html>
