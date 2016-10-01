@@ -2,6 +2,10 @@
 <html>
   <head>
       <link href='style2.css'  type='text/css' rel='stylesheet'> <!--create new style sheet named style 2-->
+      <script src="node_modules/jquery/dist/jquery.js"> </script>
+      <script language="javascript" type="text/javascript">
+      </script>
+      <script src="buttons.js"></script>
   </head>
   <body>
    <div class="ingredients ">
@@ -15,11 +19,11 @@
       <div class="container2">
         <h1>Recipes</h1>
         <ul class="tab">
-  			<li><a href="#" class="tablinks" onclick="openCity(event, 'Appetizer')">Appetizer</a></li>
-  			<li><a href="#" class="tablinks" onclick="openCity(event, 'Breakfast')">Breakfast</a></li>
-  			<li><a href="#" class="tablinks" onclick="openCity(event, 'Lunch')">Lunch</a></li>
-  			<li><a href="#" class="tablinks" onclick="openCity(event, 'Dinner')">Dinner</a></li>
-  			<li><a href="#" class="tablinks" onclick="openCity(event, 'Dessert')">Dessert</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Appetizer')">Appetizer</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Breakfast')">Breakfast</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Lunch')">Lunch</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Dinner')">Dinner</a></li>
+  			<li><a href="#" class="tablinks" onclick="openWindow(event, 'Dessert')">Dessert</a></li>
 		</ul>
 
 		<div id="Appetizer" class="tabcontent">
@@ -35,5 +39,9 @@
 
       </div>
     </div>
+    <script>
+    function openWindow(event, meal){
+      window.open("http://www.google.com");
+    }
   </body>
  </html>
