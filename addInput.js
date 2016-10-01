@@ -14,8 +14,8 @@ function addInput(divName){
 }*/
 
 
-$(document).ready(function() {
-	    var next = 1;
+$(document).ready(function(){
+    var next = 1;
     $(".add-more").click(function(e){
         e.preventDefault();
         var addto = "#field" + next;
@@ -38,6 +38,10 @@ $(document).ready(function() {
                 $(fieldID).remove();
             });
     });
+    
+
+    
+});
     
 
 }
