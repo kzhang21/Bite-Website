@@ -15,14 +15,21 @@ $(document).ready(function(){
 		//get whatever input is available
 
 		//store in array
-		
+		var array = [ingredients];
 
 		//parce html template 
 		//put on page 
+		console.log('ingredients');
+
 		//& store in javascript to send in backend 
+		$.ajax({
+	    	url: "/urltoMyOwnSite.php",
+	    	type: "POST",
+	    	data: {myArray : array}
+		});
 
 		//get data back from backend, form in jsand
-		//convert back into html to print 
+		//convert back into html to print out recipes they can use
 		$.get(
 	    "something.php",
 	    {paramOne : 1, paramX : 'abc'},
