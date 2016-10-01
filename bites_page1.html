@@ -42,10 +42,10 @@
           <div class="fourth">
         <h2></br>What's in your fridge?</h2>
           <div class="centerize">
-          <!--<div class="btn" href="#">GET STARTED
+          <!--<div class="btn" href="#">GET STARTED-->
           <div class="btn" href="bites_page1.html" onclick="openWindow(event, 'GET STARTED')">GET STARTED
-           </div>-->
-           <div class="btn" href="bite ingredient and recipe page.html">GET STARTED</a></div>
+           </div>
+
 
            </div> 
         </div>
@@ -62,7 +62,7 @@
     }
     </script>-->
 
-     <!--function to send request for data to server???-->
+     <!--function to send request for data to server???
     <script>
     function openWindow() {
     var xhttp = new XMLHttpRequest();
@@ -73,7 +73,16 @@
     };
     xhttp.open("GET", "bite ingredient and recipe page.html", true);
     xhttp.send();
+    }-->
+
+    <script type="text/javascript">
+    var WindowObjectReference; /* Declaring a global variable - store reference to new window being created*/
+    function openWindow()
+    {
+    WindowObjectReference = window.open("file:///Users/kaylaippongi/Desktop/Bite-Website/bite%20ingredient%20and%20recipe%20page.html", "CNN_WindowName",
+    "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes");
     }
+
     </script>
   </body>
 </html>
