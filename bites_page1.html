@@ -51,9 +51,25 @@
         <p> contact us
         </p>
         </div>
+
+      <!--click get started button = opens google
       <script>
     function openWindow(event, meal){
       window.open("http://www.google.com");
+    }
+    </script>-->
+
+     <!--function to send request for data to server???-->
+    <script>
+    function openWindow() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "bite ingredient and recipe page.html", true);
+    xhttp.send();
     }
     </script>
   </body>

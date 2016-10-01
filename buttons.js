@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	$.ajax({
 		url: "/abc"
-	////if there is something ready...
+	////if successful ajax request
 	}).success(function(data) {
-		console.log(data);
 
+}
 
 	}).error(function(){
-		console.log('error');
+		console.log('ERROR');
 	})
 })
