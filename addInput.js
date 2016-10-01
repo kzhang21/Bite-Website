@@ -6,9 +6,23 @@ $(document).ready(function(){
 
 	$("body").on("click", ".add", function (e) 
 	{
-		//look up input value @UI
+		//look up input value @UI 
+		var ingredients = document.getElementById('add').value 
 
 		//get request 
+		$input = Input::all(); //getting all input for the request 
+
+		//get whatever input is available
+
+		//store in array
+		
+
+		//parce html template 
+		//put on page 
+		//& store in javascript to send in backend 
+
+		//get data back from backend, form in jsand
+		//convert back into html to print 
 		$.get(
 	    "something.php",
 	    {paramOne : 1, paramX : 'abc'},
@@ -26,7 +40,7 @@ $(document).ready(function(){
 	    }
 	}); 
 	</script> */
-	
+
 	});
 });
 
