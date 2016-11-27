@@ -23,7 +23,7 @@ $(document).ready(function(){
 		//parce html template 
 		jQuery.parseHTML( ingredients [, context ] [, keepScripts ])
 		
-		//put on page 
+		//display on page
 		console.log('ingredients');
 
 		//& store in javascript to send in backend 
@@ -42,16 +42,6 @@ $(document).ready(function(){
 	       alert('page content: ' + data);
 	    }
 	);
-/*
-			   <!-- the script code below submits your input by hiting enter rather than a button -->
-	    <script type="text/javascript">
-	    $(function(){
-	      $("#field").keyup(function(event){
-	  if(event.which == 13){
-	    document.POST.submit();
-	    }
-	}); 
-	</script> */
 
 	});
 });
